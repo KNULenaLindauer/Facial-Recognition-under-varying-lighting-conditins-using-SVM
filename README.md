@@ -8,7 +8,12 @@ This project aims to address the challenges of facial recognition under varying 
 - To develop a robust SVM model capable of classifying facial images with high accuracy.
 - To demonstrate the effectiveness of SVM in handling variations caused by changes in lighting.
 - To evaluate the performance of the model on the Extended Yale B dataset, which is specifically designed for testing facial recognition under controlled lighting conditions.
-Results
+- Dimensions of Extended Yale Datset B: .......................(to be inserted)...................
+Results:
+- very high accuracy
+-
+-
+Zusatz: entferne Warning Meldung, damit der Code später beim Testen durch Prof besser durchläuft
 
 ##### Accuracy
 The model achieved a test accuracy of X% when trained and tested on distinct subsets of the dataset. This result highlights the capability of SVM to classify faces under diverse lighting conditions.
@@ -38,7 +43,12 @@ The file strucrure consists of the following:
 Man klatsche die Bilder für die verschiedenen Ausgänge einmal hier herein- evtl. noch ein Vergleich zu k algo oder anderen um zu zeigen, dass Accuracy dann nicht so hoch ist (GLaubwürdigkeit und so)
 
 ### Installation and Usage
-Datensatz !!!!!!!!!!!!!!
+This project has been implememnted with Google Colab.   (list was Colab benötigt -Google Konto)
+The choosen data set is the Extended Yale B dataset, which needs to be implemented into the environment. In this example the data has been downloaded from ...........(explain how to includde and implement the dataset (source verlinken)).
+
+After the succesfull upload of the dataset to Google One Drive, the data can be accessed through Colab.
+
+The program itself can then be tested and run without any further adjustions.
 
 
 ### References and Documentation
@@ -55,6 +65,8 @@ Contributions:
 - mal schauen ob sich da noch was brauchbares finden lässr
 
 ### Future work
+(Irgendwo sollt enoch angemerkt werden, dass dieser Datensatz quasi perfekt für die Aufgabe geeignet ist, da sehr viele Fotos der Individueen vorhanden sind --> quasi perfekte Trainingsbedingungen)
+
 To build on the current project, several potential improvements can be explored. One promising direction is the incorporation of neural networks, particularly Convolutional Neural Networks (CNNs), which can provide superior performance on larger and more diverse datasets by learning hierarchical feature representations. Data augmentation is another avenue worth pursuing, as it can enrich the dataset with synthetic variations, including different lighting angles, occlusions, and facial expressions, to improve the model’s robustness.
 
 Future iterations of this project could also focus on enabling real-time facial recognition by integrating a webcam or camera feed. This would require optimizing the SVM implementation or exploring alternative algorithms better suited for real-time performance. Another area for enhancement is the combination of SVM with feature extraction techniques such as Principal Component Analysis (PCA) or Histogram of Oriented Gradients (HOG), which could boost both accuracy and speed.
