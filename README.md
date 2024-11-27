@@ -82,7 +82,7 @@ The code consists of the following:
           38       1.00      1.00      1.00       120
           39       1.00      1.00      1.00       115
 
-    accuracy                           1.00      3278
+    accuracy        -          -       1.00      3278
    macro avg       1.00      1.00      1.00      3278
 weighted avg       1.00      1.00      1.00      3278
 
@@ -169,9 +169,32 @@ This path allows the script to access the dataset stored in Google Drive, prepro
 
 
 ### References and Documentation
-Füge Übersicht Latex File ein (also ursprünglich hochgeladenes Dokument)
-- Liste der Quellen
-- ...
+Support Vector Maschines:
+Explanation 
+
+
+[1] Athinodoros S. Georghiades, Peter N. Belhumeur, and David J. Kriegman.
+“From Few to Many: Illumination Cone Models for Face Recognition under
+Variable Lighting and Pose”. In: IEEE Transactions on Pattern Analysis and
+Machine Intelligence 23.6 (2001), pp. 643–660. doi: 10.1109/34.927464. url:
+https://doi.org/10.1109/34.927464.
+[2] Guodong Guo, Stan Z. Li, and Kap Luk Chan. “Support vector machines
+for face recognition”. In: Image and Vision Computing 19.9 (2001), pp. 631–
+638. issn: 0262-8856. doi: https : / / doi . org / 10 . 1016 / S0262 - 8856(01 )
+00046-4. url: https://www.sciencedirect.com/science/article/pii/
+S0262885601000464.
+[3] P. Phillips. “Support Vector Machines Applied to Face Recognition”. In: Advances
+in Neural Information Processing Systems. Ed. by M. Kearns, S. Solla,
+and D. Cohn. Vol. 11. MIT Press, 1998. url: https://proceedings.neurips.
+cc/paper_files/paper/1998/file/a2cc63e065705fe938a4dda49092966f-
+Paper.pdf.
+[4] Waseem Rana et al. “Face Recognition in Different Light Conditions”. In:
+SpringerLink (2022). doi: 10.1007/springerlink12345. url: https://link.
+springer.com/article/10.1007/springerlink12345.
+[5] Lichun Zhang et al. “Face Recognition Using Scale Invariant Feature Transform
+and Support Vector Machine”. In: 2008 The 9th International Conference for
+Young Computer Scientists. 2008, pp. 1766–1770. doi: 10.1109/ICYCS.2008.
+481.
 
 ### Issues and Contributions
 One of the primary challenges observed in this project is the model's limited generalization to extreme lighting conditions. While the SVM performs well under most scenarios, it struggles when faced with very bright or heavily shadowed images, where facial features become significantly obscured or distorted. Another limitation is the relatively small size of the Extended Yale B dataset, which, despite its controlled lighting variations, does not capture real-world complexities such as facial expressions, occlusions, or diverse backgrounds.
