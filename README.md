@@ -39,19 +39,19 @@ Hier ist die angepasste Syntax:
 markdown
 Code kopieren
 # Projektstruktur
+```bash
+MyProject/ ├── Ordner1/ │ ├── datei1.py │ ├── datei2.py ├── Ordner2/ │ ├── datei1.py │ ├── datei2.py ├── datei_außen_1.py ├── datei_außen_2.py └── README.md
 
-Dies ist die grundlegende Ordnerstruktur deines Projekts. Du kannst diese nach Belieben anpassen.
+```
 
-MyProject/ 
-├── Ordner1/ 
- │ ├── datei1.py 
- │ ├── datei2.py 
-  ├── Ordner2/
-  │ ├── datei1.py 
-  │ ├── datei2.py 
-├── datei_außen_1.py 
-├── datei_außen_2.py 
-└── README.md
+
+### Erklärung der Struktur:
+
+- `MyProject/`: Hauptverzeichnis deines Projekts.
+- `Ordner1/` und `Ordner2/`: Enthalten jeweils zwei Python-Dateien.
+- `datei_außen_1.py` und `datei_außen_2.py`: Dateien, die sich außerhalb der Ordner befinden.
+- `README.md`: Diese Datei, die dein Projekt beschreibt.
+
 
 ##### Code
 The used Source Code has been created in Google Colab and ist listed in this repsoitory in the file order "NAME TO BE INSERTED"
@@ -117,62 +117,7 @@ The code consists of the following:
 
 
 - Confusion Matrix:
-[[111   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0 115   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0 114   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0 110   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0 115   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0 109   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   1 110   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0 119   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0 151   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0 122   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0 129   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0 108   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0 122   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0 111   0   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0 126   0   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 113   0   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 110   0
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 120
-    0   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-  110   0   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0 114   0   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0 103   0   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0 114   0   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0 128   0   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0 108   0   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0 127   0   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   1 122   0   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0 120   0]
- [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   0   0   0   0   0   0   0 115]]
+Bild................
   
 - Cohen's Kappa: 1.00
 
@@ -194,29 +139,30 @@ dataset_path = '/content/drive/My Drive/ExtendedYaleB'
 5) Run the provided script
 6) evaluate performance with metrics and visualizations
 -------------------------------------------------------
+### References and Documentation#
+##### References
+# Referenzen
 
-[1] Athinodoros S. Georghiades, Peter N. Belhumeur, and David J. Kriegman.
-“From Few to Many: Illumination Cone Models for Face Recognition under
-Variable Lighting and Pose”. In: IEEE Transactions on Pattern Analysis and
-Machine Intelligence 23.6 (2001), pp. 643–660. doi: 10.1109/34.927464. url:
-https://doi.org/10.1109/34.927464.
-[2] Guodong Guo, Stan Z. Li, and Kap Luk Chan. “Support vector machines
-for face recognition”. In: Image and Vision Computing 19.9 (2001), pp. 631–
-638. issn: 0262-8856. doi: https : / / doi . org / 10 . 1016 / S0262 - 8856(01 )
-00046-4. url: https://www.sciencedirect.com/science/article/pii/
-S0262885601000464.
-[3] P. Phillips. “Support Vector Machines Applied to Face Recognition”. In: Advances
-in Neural Information Processing Systems. Ed. by M. Kearns, S. Solla,
-and D. Cohn. Vol. 11. MIT Press, 1998. url: https://proceedings.neurips.
-cc/paper_files/paper/1998/file/a2cc63e065705fe938a4dda49092966f-
-Paper.pdf.
-[4] Waseem Rana et al. “Face Recognition in Different Light Conditions”. In:
-SpringerLink (2022). doi: 10.1007/springerlink12345. url: https://link.
-springer.com/article/10.1007/springerlink12345.
-[5] Lichun Zhang et al. “Face Recognition Using Scale Invariant Feature Transform
-and Support Vector Machine”. In: 2008 The 9th International Conference for
-Young Computer Scientists. 2008, pp. 1766–1770. doi: 10.1109/ICYCS.2008.
-481.
+1. **Georghiades, A. S., Belhumeur, P. N., & Kriegman, D. J. (2001).** "From Few to Many: Illumination Cone Models for Face Recognition under Variable Lighting and Pose." *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 23(6), 643–660.  
+   [DOI: 10.1109/34.927464](https://doi.org/10.1109/34.927464)
+
+2. **Guo, G., Li, S. Z., & Chan, K. L. (2001).** "Support vector machines for face recognition." *Image and Vision Computing*, 19(9), 631–638.  
+   [DOI: 10.1016/S0262-8856(01)00046-4](https://www.sciencedirect.com/science/article/pii/S0262885601000464)
+
+3. **Phillips, P. (1998).** "Support Vector Machines Applied to Face Recognition." *Advances in Neural Information Processing Systems*, 11. MIT Press.  
+   [Paper Link](https://proceedings.neurips.cc/paper_files/paper/1998/file/a2cc63e065705fe938a4dda49092966f-Paper.pdf)
+
+4. **Rana, W., et al. (2022).** "Face Recognition in Different Light Conditions." *SpringerLink*.  
+   [DOI: 10.1007/springerlink12345](https://link.springer.com/article/10.1007/springerlink12345)
+
+5. **Zhang, L., et al. (2008).** "Face Recognition Using Scale Invariant Feature Transform and Support Vector Machine." In: *2008 The 9th International Conference for Young Computer Scientists*, 1766–1770.  
+   [DOI: 10.1109/ICYCS.2008.481](https://doi.org/10.1109/ICYCS.2008.481)
+
+#### Explanation of Key Algorithm (Support Vector Machine SMV)
+A Support Vector Machine (SVM) is a supervised machine learning algorithm used for classification tasks. It works by finding the optimal hyperplane that separates data into different classes, maximizing the margin between the hyperplane and the closest data points, known as support vectors. The SVM can handle both linear and non-linear classification problems. For non-linear data, SVM uses a kernel trick to map the data into a higher-dimensional space where a linear separation is possible. Common kernels include the Radial Basis Function (RBF) kernel, which allows for flexible decision boundaries.
+
+The key parameters in SVM are C and gamma. The parameter C controls the trade-off between maximizing the margin and minimizing classification errors, while gamma defines the influence of individual data points. SVM is effective in high-dimensional spaces and is known for its ability to generalize well, but it can be computationally expensive and requires careful tuning of parameters to achieve optimal performance.
+
 
 ### Issues and Contributions
 One of the primary challenges observed in this project is the model's limited generalization to extreme lighting conditions. While the SVM performs well under most scenarios, it struggles when faced with very bright or heavily shadowed images, where facial features become significantly obscured or distorted. Another limitation is the relatively small size of the Extended Yale B dataset, which, despite its controlled lighting variations, does not capture real-world complexities such as facial expressions, occlusions, or diverse backgrounds.
@@ -229,7 +175,6 @@ Contributions:
 - mal schauen ob sich da noch was brauchbares finden lässr
 
 ### Future work
-(Irgendwo sollt enoch angemerkt werden, dass dieser Datensatz quasi perfekt für die Aufgabe geeignet ist, da sehr viele Fotos der Individueen vorhanden sind --> quasi perfekte Trainingsbedingungen)
 
 To build on the current project, several potential improvements can be explored. One promising direction is the incorporation of neural networks, particularly Convolutional Neural Networks (CNNs), which can provide superior performance on larger and more diverse datasets by learning hierarchical feature representations. Data augmentation is another avenue worth pursuing, as it can enrich the dataset with synthetic variations, including different lighting angles, occlusions, and facial expressions, to improve the model’s robustness.
 
