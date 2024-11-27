@@ -50,6 +50,19 @@ After the succesfull upload of the dataset to Google One Drive, the data can be 
 
 The program itself can then be tested and run without any further adjustions.
 
+The Extended Yale Face Dataset B can be obtained from its official source at the following link: http://vision.ucsd.edu/extyaleb/CroppedYaleBZip/CroppedYaleB.zip. After downloading the dataset, it is necessary to extract the contents. Upon extraction, the dataset should be uploaded to Google Drive for integration into the project. The folder structure, including all subdirectories and image files, must be preserved to ensure correct file referencing.
+
+To access the dataset within a Google Colab environment, the Google Drive must first be mounted. This can be achieved by using the following code snippet at the beginning of the Colab notebook:
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+Upon successful authentication, the dataset can be accessed by specifying the correct path to the dataset folder in the script.
+
+dataset_path = '/content/drive/My Drive/ExtendedYaleB'
+
+This path allows the script to access the dataset stored in Google Drive, preprocess the images by resizing them to the specified dimensions, and flatten them for feature extraction. After setting the appropriate dataset path, the script can be executed within the Colab environment. The script will automatically load, process, and train the model on the dataset, generating performance metrics such as accuracy, precision, recall, and the classification report. Additionally, visualizations, including test image predictions and, if applicable, ROC and precision-recall curves, will be produced.
+
 
 ### References and Documentation
 Füge Übersicht Latex File ein (also ursprünglich hochgeladenes Dokument)
@@ -60,6 +73,8 @@ Füge Übersicht Latex File ein (also ursprünglich hochgeladenes Dokument)
 One of the primary challenges observed in this project is the model's limited generalization to extreme lighting conditions. While the SVM performs well under most scenarios, it struggles when faced with very bright or heavily shadowed images, where facial features become significantly obscured or distorted. Another limitation is the relatively small size of the Extended Yale B dataset, which, despite its controlled lighting variations, does not capture real-world complexities such as facial expressions, occlusions, or diverse backgrounds.
 
 The scalability of the model is another concern. SVMs are computationally intensive, especially when handling larger datasets, due to their quadratic training complexity. This may pose challenges for scaling the project to datasets with a significantly higher number of samples. Additionally, the model’s accuracy depends heavily on preprocessing steps such as resizing and grayscale conversion. Any inconsistencies or errors during these steps can negatively impact performance.
+
+Laden des Datasets dauert sehr lange (ca 30 Minuten) 
 
 Contributions:
 - mal schauen ob sich da noch was brauchbares finden lässr
