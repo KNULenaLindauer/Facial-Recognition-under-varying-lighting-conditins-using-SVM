@@ -16,7 +16,7 @@ Results:
 Zusatz: entferne Warning Meldung, damit der Code später beim Testen durch Prof besser durchläuft
 
 ##### Accuracy
-The model achieved a test accuracy of X% when trained and tested on distinct subsets of the dataset. This result highlights the capability of SVM to classify faces under diverse lighting conditions.
+The model achieved a test accuracy of 99,4% when trained and tested on distinct subsets of the dataset. This result highlights the capability of SVM to classify faces under diverse lighting conditions.
 ##### Performance
 The SVM-based approach is computationally efficient and well-suited for small-to-medium-sized datasets, making it a viable solution for controlled environments.
 #### Insights
@@ -34,13 +34,117 @@ By solving this problem, the project contributes to the development of more robu
 
 ### Source Code
 The used Source Code has been created in Google Colab and ist listed in this repsoitory in the file order "NAME TO BE INSERTED"
-The file strucrure consists of the following:
-- dfv
-- dfvdfv
-- j
+The code consists of the following:
+- Importing all neccessary libraries
+- Mounting Drive for Datset and preparing Dataset
+- Loading Dataset
+- Splitting Dataset into training and testing sets
+- Training the SVM model with RBF kernel
+- Test Set Predictions
+- Calculate and display performance metrics for multiclass classification
+  - Accuracy  
+  - Classification Report
+-   Confusion Matrix
+  - Cohen's Kappa
+- Example display of test images along with their predicted and actual labels
 
 ### Performance Metrices
-Man klatsche die Bilder für die verschiedenen Ausgänge einmal hier herein- evtl. noch ein Vergleich zu k algo oder anderen um zu zeigen, dass Accuracy dann nicht so hoch ist (GLaubwürdigkeit und so)
+- Accuracy: 99.94%
+- Classification Report:
+              precision    recall  f1-score   support
+
+          11       1.00      1.00      1.00       111
+          12       1.00      1.00      1.00       115
+          13       1.00      1.00      1.00       114
+          15       1.00      1.00      1.00       110
+          16       1.00      1.00      1.00       115
+          17       0.99      1.00      1.00       109
+          18       1.00      0.99      1.00       111
+          19       1.00      1.00      1.00       119
+          20       1.00      1.00      1.00       151
+          21       1.00      1.00      1.00       122
+          22       1.00      1.00      1.00       129
+          23       1.00      1.00      1.00       108
+          24       1.00      1.00      1.00       122
+          25       1.00      1.00      1.00       111
+          26       1.00      1.00      1.00       126
+          27       1.00      1.00      1.00       113
+          28       1.00      1.00      1.00       110
+          29       1.00      1.00      1.00       120
+          30       1.00      1.00      1.00       110
+          31       1.00      1.00      1.00       114
+          32       1.00      1.00      1.00       103
+          33       1.00      1.00      1.00       114
+          34       1.00      1.00      1.00       128
+          35       1.00      1.00      1.00       108
+          36       0.99      1.00      1.00       127
+          37       1.00      0.99      1.00       123
+          38       1.00      1.00      1.00       120
+          39       1.00      1.00      1.00       115
+
+    accuracy                           1.00      3278
+   macro avg       1.00      1.00      1.00      3278
+weighted avg       1.00      1.00      1.00      3278
+
+- Confusion Matrix:
+[[111   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0 115   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0 114   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0 110   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0 115   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0 109   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   1 110   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0 119   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0 151   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0 122   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0 129   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0 108   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0 122   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0 111   0   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0 126   0   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 113   0   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 110   0
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 120
+    0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  110   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0 114   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0 103   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0 114   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0 128   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0 108   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0 127   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   1 122   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0 120   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   0   0   0   0   0   0   0 115]]
+  
+- Cohen's Kappa: 1.00
 
 ### Installation and Usage
 This project has been implememnted with Google Colab.   (list was Colab benötigt -Google Konto)
