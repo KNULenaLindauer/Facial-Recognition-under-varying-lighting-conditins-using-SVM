@@ -27,8 +27,8 @@ Extreme lighting conditions can distort facial features, affecting recognition p
 Steps like resizing and grayscale conversion significantly improved accuracy by standardizing input images and will therefore be performed in this project
 - Limitations:
 Misclassifications occurred in images with heavy shadows or extreme distortions, indicating a need for advanced preprocessing or data augmentation
-- Motivation and Significance
-Facial recognition is central to security systems, biometric authentication, and mobile applications. However, real-world environments present challenges like lighting variability. This project demonstrates how machine learning algorithms, particularly SVM, can address these challenges, contributing to the development of more reliable systems.
+- Motivation and Significance:
+Facial recognition is central to security systems, biometric authentication, and mobile applications. However, real-world environments present challenges like lighting variability. This project demonstrates how machine learning algorithms, particularly SVM, can address these challenges, contributing to the development of more reliable systems
 -----------------------------------------------------------------------------------------------------
 ## 2 Source Code
 ##### Structure
@@ -70,6 +70,8 @@ The code consists of the following:
   - Confusion Matrix
   - Cohen's Kappa
 - Example display of test images along with their predicted and actual labels
+
+## Anpassen +Auteilung in 2 Teilcodes
 
 ##### Remarks: 
 - Google Account is required in order to use Colab
@@ -145,8 +147,10 @@ drive.mount('/content/drive')
 ```python
 dataset_path = '/content/drive/My Drive/ExtendedYaleB'
 ```
-5) Run the provided script
-6) evaluate performance with metrics and visualizations
+5) Run the provided scripts
+   Script 1 ########################################################################
+   Script 2 #######################################################
+6) evaluate performance based on displayed metrics and visualizations
 -------------------------------------------------------
 ## 5 References and Documentation#
 ##### References
@@ -177,10 +181,13 @@ One of the primary challenges observed in this project is the model's limited ge
 
 The scalability of the model is another concern. SVMs are computationally intensive, especially when handling larger datasets, due to their quadratic training complexity. This may pose challenges for scaling the project to datasets with a significantly higher number of samples. Additionally, the model’s accuracy depends heavily on preprocessing steps such as resizing and grayscale conversion. Any inconsistencies or errors during these steps can negatively impact performance.
 
-Laden des Datasets dauert sehr lange (ca 30 Minuten) 
+###################################################Laden des Datasets dauert sehr lange (ca 30 Minuten) 
 
 Contributions:
-- mal schauen ob sich da noch was brauchbares finden lässr
+- mal schauen ob sich da noch was brauchbares finden lässt
+- runtime enhancements
+- using structure for zraining different kind of models
+- trying different algorithms
 ----------------------------------------------------------------
 ## 7 Future work
 
