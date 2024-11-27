@@ -1,7 +1,7 @@
 # Facial Recognition under varying lighting conditions using SVM
 Project report for Understanding of Images
 
-### Project Results and Overview
+## 1 Project Results and Overview
 Key Objectives
 Facial recognition systems are vital in modern applications, including security, surveillance, and biometric authentication. However, ensuring consistent performance under various environmental factors, especially lighting variations, is a persistent challenge. This project addresses this issue by employing Support Vector Machines (SVM) for robust facial recognition under varying lighting conditions.
 
@@ -28,7 +28,7 @@ Misclassifications occurred in images with heavy shadows or extreme distortions,
 - Motivation and Significance
 Facial recognition is central to security systems, biometric authentication, and mobile applications. However, real-world environments present challenges like lighting variability. This project demonstrates how machine learning algorithms, particularly SVM, can address these challenges, contributing to the development of more reliable systems.
 -----------------------------------------------------------------------------------------------------
-### Source Code
+## 2 Source Code
 ##### Structure
 
 
@@ -76,7 +76,7 @@ The code consists of the following:
 - Loading the dataset and training the SVM Model takes a lot of time (approx 10-20 minutes each)
 ---------------------------------------------------------------------------------------------------------------------
 
-### Performance Metrices
+## 3 Performance Metrices
 - Accuracy: 99.94%
 - Classification Report:
 
@@ -121,8 +121,8 @@ The code consists of the following:
 
   
 - Cohen's Kappa: 1.00
-
-### Installation and Usage
+--------------------------------------------------------------------------------
+## 4 Installation and Usage
 This project has been implemented using Google Colab, with the Extended Yale B dataset.
 
 Steps:
@@ -140,9 +140,8 @@ dataset_path = '/content/drive/My Drive/ExtendedYaleB'
 5) Run the provided script
 6) evaluate performance with metrics and visualizations
 -------------------------------------------------------
-### References and Documentation#
+## 5 References and Documentation#
 ##### References
-# Referenzen
 
 1. **Georghiades, A. S., Belhumeur, P. N., & Kriegman, D. J. (2001).** "From Few to Many: Illumination Cone Models for Face Recognition under Variable Lighting and Pose." *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 23(6), 643–660.  
    [DOI: 10.1109/34.927464](https://doi.org/10.1109/34.927464)
@@ -164,8 +163,8 @@ A Support Vector Machine (SVM) is a supervised machine learning algorithm used f
 
 The key parameters in SVM are C and gamma. The parameter C controls the trade-off between maximizing the margin and minimizing classification errors, while gamma defines the influence of individual data points. SVM is effective in high-dimensional spaces and is known for its ability to generalize well, but it can be computationally expensive and requires careful tuning of parameters to achieve optimal performance.
 
-
-### Issues and Contributions
+-----------------------------------------------------------------------------
+## 6 Issues and Contributions
 One of the primary challenges observed in this project is the model's limited generalization to extreme lighting conditions. While the SVM performs well under most scenarios, it struggles when faced with very bright or heavily shadowed images, where facial features become significantly obscured or distorted. Another limitation is the relatively small size of the Extended Yale B dataset, which, despite its controlled lighting variations, does not capture real-world complexities such as facial expressions, occlusions, or diverse backgrounds.
 
 The scalability of the model is another concern. SVMs are computationally intensive, especially when handling larger datasets, due to their quadratic training complexity. This may pose challenges for scaling the project to datasets with a significantly higher number of samples. Additionally, the model’s accuracy depends heavily on preprocessing steps such as resizing and grayscale conversion. Any inconsistencies or errors during these steps can negatively impact performance.
@@ -174,8 +173,8 @@ Laden des Datasets dauert sehr lange (ca 30 Minuten)
 
 Contributions:
 - mal schauen ob sich da noch was brauchbares finden lässr
-
-### Future work
+----------------------------------------------------------------
+## 7 Future work
 
 To build on the current project, several potential improvements can be explored. One promising direction is the incorporation of neural networks, particularly Convolutional Neural Networks (CNNs), which can provide superior performance on larger and more diverse datasets by learning hierarchical feature representations. Data augmentation is another avenue worth pursuing, as it can enrich the dataset with synthetic variations, including different lighting angles, occlusions, and facial expressions, to improve the model’s robustness.
 
