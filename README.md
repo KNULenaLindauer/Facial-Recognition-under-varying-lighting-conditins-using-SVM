@@ -6,7 +6,6 @@ Key Objectives
 Facial recognition systems are vital in modern applications, including security, surveillance, and biometric authentication. However, ensuring consistent performance under various environmental factors, especially lighting variations, is a persistent challenge. This project addresses this issue by employing Support Vector Machines (SVM) for robust facial recognition under varying lighting conditions.
 
 The main objectives of this project are:
-
 - Developing an SVM-based model capable of robust facial recognition
 - Mitigating lighting variability in facial recognition using SVM
 - Validating the model’s performance using the Extended Yale B dataset, specifically designed for controlled lighting variability
@@ -28,7 +27,7 @@ Steps like resizing and grayscale conversion significantly improved accuracy by 
 Misclassifications occurred in images with heavy shadows or extreme distortions, indicating a need for advanced preprocessing or data augmentation.
 - Motivation and Significance
 Facial recognition is central to security systems, biometric authentication, and mobile applications. However, real-world environments present challenges like lighting variability. This project demonstrates how machine learning algorithms, particularly SVM, can address these challenges, contributing to the development of more reliable systems.
-
+-----------------------------------------------------------------------------------------------------
 ### Source Code
 The used Source Code has been created in Google Colab and ist listed in this repsoitory in the file order "NAME TO BE INSERTED"
 The code consists of the following:
@@ -50,13 +49,12 @@ The code consists of the following:
 - Listed source code is uploaded as .ipynd file
 - Dataset needs to be downloaded and uploaded to Google Drive to use given source code (ref. Installation and Usage)
 - Loading the dataset and training the SVM Model takes a lot of time (approx 10-20 minutes each)
-  
-
+---------------------------------------------------------------------------------------------------------------------
 
 ### Performance Metrices
 - Accuracy: 99.94%
 - Classification Report:
-              precision    recall  f1-score   support
+          person    precision    recall  f1-score   support
 
           11       1.00      1.00      1.00       111
           12       1.00      1.00      1.00       115
