@@ -12,11 +12,11 @@ The main objectives of this project are:
 - Analyzing the model's performance and providing insights into its strengths and limitations in handling lighting variations
   
 ##### Accuracy
-The model achieved an exceptional test accuracy of 99.94%, highlighting the effectiveness of SVM in handling diverse lighting conditions.
+The model achieved a test accuracy of 99.94%, highlighting the effectiveness of SVM in handling diverse lighting conditions
 
 ##### Performance
-The SVM-based approach demonstrated computational efficiency, making it suitable for small to medium-sized datasets.
-It is particularly effective in controlled environments, where preprocessing steps significantly enhance performance.
+The SVM-based approach demonstrated computational efficiency, making it suitable for small to medium-sized datasets
+It is particularly effective in controlled environments, where preprocessing steps significantly enhance performance
 
 ##### Insights
 - Impact of Lighting Variations:
@@ -29,6 +29,31 @@ Misclassifications occurred in images with heavy shadows or extreme distortions,
 Facial recognition is central to security systems, biometric authentication, and mobile applications. However, real-world environments present challenges like lighting variability. This project demonstrates how machine learning algorithms, particularly SVM, can address these challenges, contributing to the development of more reliable systems.
 -----------------------------------------------------------------------------------------------------
 ### Source Code
+##### Structure
+
+
+Für eine visuelle Darstellung der Projektstruktur, bei der die Ordner und Dateien korrekt hierarchisch angezeigt werden, kannst du die folgende Markdown-Syntax verwenden. Die Struktur wird mit Einrückungen und der richtigen Formatierung angezeigt, sodass du sie in deiner README.md Datei verwenden kannst.
+
+Hier ist die angepasste Syntax:
+
+markdown
+Code kopieren
+# Projektstruktur
+
+Dies ist die grundlegende Ordnerstruktur deines Projekts. Du kannst diese nach Belieben anpassen.
+
+MyProject/ 
+├── Ordner1/ 
+ │ ├── datei1.py 
+ │ ├── datei2.py 
+  ├── Ordner2/
+  │ ├── datei1.py 
+  │ ├── datei2.py 
+├── datei_außen_1.py 
+├── datei_außen_2.py 
+└── README.md
+
+##### Code
 The used Source Code has been created in Google Colab and ist listed in this repsoitory in the file order "NAME TO BE INSERTED"
 The code consists of the following:
 - Importing all neccessary libraries
@@ -155,53 +180,20 @@ The code consists of the following:
 This project has been implemented using Google Colab, with the Extended Yale B dataset.
 
 Steps:
-Download the dataset from Extended Yale B Dataset Link.
-Extract the contents and upload them to Google Drive.
-Mount Google Drive in Colab using the following code:
-python
-Code kopieren
+1) Download the dataset from Extended Yale B Dataset Link: http://vision.ucsd.edu/extyaleb/CroppedYaleBZip/CroppedYaleB.zip
+2) Extract the contents and upload them to Google Drive.
+3) Mount Google Drive in Colab 
+```python
 from google.colab import drive
 drive.mount('/content/drive')
-Specify the dataset path:
-python
-Code kopieren
+```
+4) Specify the dataset path:
+```python
 dataset_path = '/content/drive/My Drive/ExtendedYaleB'
-Run the provided script to:
-Preprocess images (resize and grayscale conversion).
-Train the SVM model.
-Evaluate performance with metrics and visualizations.
-
-
-
---------------------------------------------------------
-This project has been implememnted with Google Colab.   (list was Colab benötigt -Google Konto)
-The choosen data set is the Extended Yale B dataset, which needs to be implemented into the environment. In this example the data has been downloaded from ...........(explain how to includde and implement the dataset (source verlinken)).
-
-After the succesfull upload of the dataset to Google One Drive, the data can be accessed through Colab.
-
-The program itself can then be tested and run without any further adjustions.
-
-The Extended Yale Face Dataset B can be obtained from its official source at the following link: http://vision.ucsd.edu/extyaleb/CroppedYaleBZip/CroppedYaleB.zip. After downloading the dataset, it is necessary to extract the contents. Upon extraction, the dataset should be uploaded to Google Drive for integration into the project. The folder structure, including all subdirectories and image files, must be preserved to ensure correct file referencing.
-
-To access the dataset within a Google Colab environment, the Google Drive must first be mounted. This can be achieved by using the following code snippet at the beginning of the Colab notebook:
-
-from google.colab import drive
-drive.mount('/content/drive')
-
-Upon successful authentication, the dataset can be accessed by specifying the correct path to the dataset folder in the script.
-
-dataset_path = '/content/drive/My Drive/ExtendedYaleB'
-
-This path allows the script to access the dataset stored in Google Drive, preprocess the images by resizing them to the specified dimensions, and flatten them for feature extraction. After setting the appropriate dataset path, the script can be executed within the Colab environment. The script will automatically load, process, and train the model on the dataset, generating performance metrics such as accuracy, precision, recall, and the classification report. Additionally, visualizations, including test image predictions and, if applicable, ROC and precision-recall curves, will be produced.
-
-
-### References and Documentation
-Support Vector Machines:
-Explanation 
-
-Dataset:
-jenfvuid
-
+```
+5) Run the provided script
+6) evaluate performance with metrics and visualizations
+-------------------------------------------------------
 
 [1] Athinodoros S. Georghiades, Peter N. Belhumeur, and David J. Kriegman.
 “From Few to Many: Illumination Cone Models for Face Recognition under
