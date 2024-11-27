@@ -177,18 +177,6 @@ A Support Vector Machine (SVM) is a supervised machine learning algorithm used f
 The key parameters in SVM are C and gamma. The parameter C controls the trade-off between maximizing the margin and minimizing classification errors, while gamma defines the influence of individual data points. SVM is effective in high-dimensional spaces and is known for its ability to generalize well, but it can be computationally expensive and requires careful tuning of parameters to achieve optimal performance.
 
 -----------------------------------------------------------------------------
-## 6 Issues and Contributions
-One of the primary challenges observed in this project is the model's limited generalization to extreme lighting conditions. While the SVM performs well under most scenarios, it struggles when faced with very bright or heavily shadowed images, where facial features become significantly obscured or distorted. Another limitation is the relatively small size of the Extended Yale B dataset, which, despite its controlled lighting variations, does not capture real-world complexities such as facial expressions, occlusions, or diverse backgrounds.
-
-The scalability of the model is another concern. SVMs are computationally intensive, especially when handling larger datasets, due to their quadratic training complexity. This may pose challenges for scaling the project to datasets with a significantly higher number of samples. Additionally, the model’s accuracy depends heavily on preprocessing steps such as resizing and grayscale conversion. Any inconsistencies or errors during these steps can negatively impact performance.
-
-###################################################Laden des Datasets dauert sehr lange (ca 30 Minuten) 
-
-Contributions:
-- mal schauen ob sich da noch was brauchbares finden lässt
-- runtime enhancements
-- using structure for zraining different kind of models
-- trying different algorithms
 
 ## 6 Issues and Contributions
 One of the primary challenges observed in this project is the model's limited generalization to extreme lighting conditions. While the SVM performs well under most scenarios, it struggles when faced with very bright or heavily shadowed images, where facial features become significantly obscured or distorted. Another limitation is the relatively small size of the Extended Yale B dataset, which, despite its controlled lighting variations, does not capture real-world complexities such as facial expressions, occlusions, or diverse backgrounds.
@@ -196,18 +184,18 @@ The scalability of the model is another concern. SVMs are computationally intens
 Although the Extended Yale B dataset is not very large, the time required to load and preprocess the data, as well as to train the SVM model, is significant—taking approximately 30 minutes in some cases. This highlights the need for more efficient data handling and processing strategies.
 
 Contributions:  
-- Optimization of Data Loading and Preprocessing
+- Optimization of Data Loading and Preprocessing:   
    Efforts were made to streamline the loading and preprocessing of the Extended Yale B dataset to reduce runtime without sacrificing data quality. This included experimenting with optimized file handling techniques and reducing redundancy in preprocessing steps.
-
-Runtime Enhancements: Adjustments were implemented to improve the efficiency of the training process. This included tuning SVM hyperparameters and using parallel processing where possible to speed up computations.
-
-Evaluation of Alternative Models: The project incorporated a framework to test and compare the performance of different machine learning algorithms, such as k-Nearest Neighbors (k-NN) and Random Forest, against SVM. This provided insights into alternative approaches to address scalability and runtime issues.
-
-Model Scalability Exploration: Experiments were conducted to explore the performance of the SVM model when trained on subsets of larger datasets, enabling an assessment of its scalability potential.
-
-Integration of Advanced Preprocessing Techniques: Advanced preprocessing methods, such as histogram equalization and contrast adjustment, were explored to improve the robustness of the model under extreme lighting conditions.
-
-Benchmarking Against Real-World Datasets: A plan was developed to benchmark the current implementation against larger, real-world datasets to identify further areas for improvement and validate the model’s performance in more diverse scenarios.
+- Runtime Enhancements:
+  Adjustments were implemented to improve the efficiency of the training process. This included tuning SVM hyperparameters and using parallel processing where possible to speed up computations.
+- Evaluation of Alternative Models:
+  The project incorporated a framework to test and compare the performance of different machine learning algorithms, such as k-Nearest Neighbors (k-NN) and Random Forest, against SVM. This provided insights into alternative approaches to address scalability and runtime issues.
+- Model Scalability Exploration:
+  Experiments were conducted to explore the performance of the SVM model when trained on subsets of larger datasets, enabling an assessment of its scalability potential.
+- Integration of Advanced Preprocessing Techniques:
+  Advanced preprocessing methods, such as histogram equalization and contrast adjustment, were explored to improve the robustness of the model under extreme lighting conditions.
+- Benchmarking Against Real-World Datasets:  
+  A plan was developed to benchmark the current implementation against larger, real-world datasets to identify further areas for improvement and validate the model’s performance in more diverse scenarios.
 
 
 ----------------------------------------------------------------
