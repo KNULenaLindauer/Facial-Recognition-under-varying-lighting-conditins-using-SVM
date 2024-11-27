@@ -20,15 +20,15 @@ It is particularly effective in controlled environments, where preprocessing ste
 
 ##### Insights:
 - Dataset:
-This project uses the Extended Yale Face Database B which contains 16128 images of 28 human subjects under 9 poses and 64 illumination conditions
+  This project uses the Extended Yale Face Database B which contains 16128 images of 28 human subjects under 9 poses and 64 illumination conditions
 - Impact of Lighting Variations:
-Extreme lighting conditions can distort facial features, affecting recognition performance
+  Extreme lighting conditions can distort facial features, affecting recognition performance
 - Role of Preprocessing:
-Steps like resizing and grayscale conversion significantly improved accuracy by standardizing input images and will therefore be performed in this project
+  Steps like resizing and grayscale conversion significantly improved accuracy by standardizing input images and will therefore be performed in this project
 - Limitations:
-Misclassifications occurred in images with heavy shadows or extreme distortions, indicating a need for advanced preprocessing or data augmentation
+  Misclassifications occurred in images with heavy shadows or extreme distortions, indicating a need for advanced preprocessing or data augmentation
 - Motivation and Significance:
-Facial recognition is central to security systems, biometric authentication, and mobile applications. However, real-world environments present challenges like lighting variability. This project demonstrates how machine learning algorithms, particularly SVM, can address these challenges, contributing to the development of more reliable systems
+  Facial recognition is central to security systems, biometric authentication, and mobile applications. However, real-world environments present challenges like lighting variability. This project demonstrates how machine learning algorithms, particularly SVM, can address these challenges, contributing to the development of more reliable systems
 -----------------------------------------------------------------------------------------------------
 ## 2 Source Code
 ##### Structure
