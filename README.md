@@ -1,5 +1,4 @@
 # Facial Recognition under varying lighting conditions using SVM
-Project report for Understanding of Images
 
 ## 1 Project Results and Overview
 #### Key Objectives  
