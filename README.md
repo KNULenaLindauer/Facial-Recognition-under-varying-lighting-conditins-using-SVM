@@ -1,4 +1,4 @@
-# Facial-Recognition-under-varying-lighting-conditins-using-SVM
+# Facial Recognition under varying lighting conditions using SVM
 Project report for Understanding of Images
 
 ### Project Results and Overview
@@ -20,9 +20,9 @@ It is particularly effective in controlled environments, where preprocessing ste
 
 ##### Insights
 - Impact of Lighting Variations:
-Extreme lighting conditions can distort facial features, affecting recognition performance.
+Extreme lighting conditions can distort facial features, affecting recognition performance
 - Role of Preprocessing:
-Steps like resizing and grayscale conversion significantly improved accuracy by standardizing input images.
+Steps like resizing and grayscale conversion significantly improved accuracy by standardizing input images and will therefore be performed in this project
 - Limitations:
 Misclassifications occurred in images with heavy shadows or extreme distortions, indicating a need for advanced preprocessing or data augmentation.
 - Motivation and Significance
@@ -117,7 +117,8 @@ The code consists of the following:
 
 
 - Confusion Matrix:
-Bild................
+![image](https://github.com/user-attachments/assets/5c01d69c-e15e-44ec-9784-3c4cb69a58c2)
+
   
 - Cohen's Kappa: 1.00
 
