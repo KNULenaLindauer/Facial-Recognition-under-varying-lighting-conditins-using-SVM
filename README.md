@@ -123,6 +123,11 @@ The code consists of the following:
 
 - Cohen's Kappa: 1.00
 - Speed:
+- ![image](https://github.com/user-attachments/assets/a8596fb3-e039-4b77-bdf7-447c8095e99e)
+-
+- ![image](https://github.com/user-attachments/assets/a2b44660-e71d-4742-b4b5-0d7c4439ff9f)
+
+
   
 --------------------------------------------------------------------------------
 ## 4 Installation and Usage
