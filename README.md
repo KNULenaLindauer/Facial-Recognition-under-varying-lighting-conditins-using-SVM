@@ -153,7 +153,7 @@ dataset_path = '/content/drive/My Drive/ExtendedYaleB'
    Script 2 #######################################################
 6) evaluate performance based on displayed metrics and visualizations
 -------------------------------------------------------
-## 5 References and Documentation#
+## 5 References and Documentation
 #### References
 
 1. **Georghiades, A. S., Belhumeur, P. N., & Kriegman, D. J. (2001).** "From Few to Many: Illumination Cone Models for Face Recognition under Variable Lighting and Pose." *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 23(6), 643–660.  
