@@ -19,12 +19,14 @@ The SVM-based approach demonstrated computational efficiency, making it suitable
 It is particularly effective in controlled environments, where preprocessing steps significantly enhance performance
 
 ##### Insights
+- Dataset:
+This project uses the Extended Yale Face Database B which contains 16128 images of 28 human subjects under 9 poses and 64 illumination conditions
 - Impact of Lighting Variations:
 Extreme lighting conditions can distort facial features, affecting recognition performance
 - Role of Preprocessing:
 Steps like resizing and grayscale conversion significantly improved accuracy by standardizing input images and will therefore be performed in this project
 - Limitations:
-Misclassifications occurred in images with heavy shadows or extreme distortions, indicating a need for advanced preprocessing or data augmentation.
+Misclassifications occurred in images with heavy shadows or extreme distortions, indicating a need for advanced preprocessing or data augmentation
 - Motivation and Significance
 Facial recognition is central to security systems, biometric authentication, and mobile applications. However, real-world environments present challenges like lighting variability. This project demonstrates how machine learning algorithms, particularly SVM, can address these challenges, contributing to the development of more reliable systems.
 -----------------------------------------------------------------------------------------------------
@@ -56,11 +58,11 @@ MyProject/ ├── Ordner1/ │ ├── datei1.py │ ├── datei2.py �
 ##### Code
 The used Source Code has been created in Google Colab and ist listed in this repsoitory in the file order "NAME TO BE INSERTED"
 The code consists of the following:
-- Importing all neccessary libraries
+- Import of required libraries
 - Mounting Drive for Datset and preparing Dataset
 - Loading Dataset
 - Splitting Dataset into training and testing sets
-- Training the SVM model with RBF kernel
+- Training SVM model with RBF kernel
 - Test Set Predictions
 - Calculate and display performance metrics for multiclass classification
   - Accuracy  
@@ -119,8 +121,9 @@ The code consists of the following:
 - Confusion Matrix:
 ![image](https://github.com/user-attachments/assets/5c01d69c-e15e-44ec-9784-3c4cb69a58c2)
 
-  
 - Cohen's Kappa: 1.00
+- Speed:
+  
 --------------------------------------------------------------------------------
 ## 4 Installation and Usage
 This project has been implemented using Google Colab, with the Extended Yale B dataset.
