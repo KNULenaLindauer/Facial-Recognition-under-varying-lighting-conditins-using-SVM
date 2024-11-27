@@ -2,7 +2,7 @@
 Project report for Understanding of Images
 
 ## 1 Project Results and Overview
-Key Objectives  
+#### Key Objectives  
 Facial recognition systems are vital in modern applications, including security, surveillance, and biometric authentication. However, ensuring consistent performance under various environmental factors, especially lighting variations, is a persistent challenge. This project addresses this issue by employing Support Vector Machines (SVM) for robust facial recognition under varying lighting conditions.
 
 #### Core Porpose  
@@ -18,17 +18,18 @@ The model achieved a test accuracy of 99.94%, highlighting the effectiveness of 
 The SVM-based approach demonstrated computational efficiency, making it suitable for small to medium-sized datasets
 It is particularly effective in controlled environments, where preprocessing steps significantly enhance performance
 
-Insights
-Dataset:  
+#### Insights
+- Dataset    
 This project uses the Extended Yale Face Database B which contains 16128 images of 28 human subjects under 9 poses and 64 illumination conditions
- Impact of Lighting Variations:  
-  Extreme lighting conditions can distort facial features, affecting recognition performance
- Role of Preprocessing:  
-  Steps like resizing and grayscale conversion significantly improved accuracy by standardizing input images and will therefore be performed in this project
- Limitations:  
-  Misclassifications occurred in images with heavy shadows or extreme distortions, indicating a need for advanced preprocessing or data augmentation
- Motivation and Significance:  
-  Facial recognition is central to security systems, biometric authentication, and mobile applications. However, real-world environments present challenges like lighting variability. This project demonstrates how machine learning algorithms, particularly SVM, can address these challenges, contributing to the development of more reliable systems
+- Impact of Lighting Variations  
+Extreme lighting conditions can distort facial features, affecting recognition performance
+- Role of Preprocessing  
+Steps like resizing and grayscale conversion significantly improved accuracy by standardizing input images and will therefore be performed in this project
+- Limitations  
+Misclassifications occurred in images with heavy shadows or extreme distortions, indicating a need for advanced preprocessing or data augmentation
+- Motivation and Significance  
+Facial recognition is central to security systems, biometric authentication, and mobile applications. However, real-world environments present challenges like lighting variability. This project demonstrates how machine learning algorithms, particularly SVM, can address these challenges, contributing to the development of more reliable systems
+
 -----------------------------------------------------------------------------------------------------
 ## 2 Source Code
 ##### Structure
