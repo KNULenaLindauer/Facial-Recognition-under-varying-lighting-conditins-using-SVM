@@ -54,7 +54,7 @@ The code consists of the following:
 ### Performance Metrices
 - Accuracy: 99.94%
 - Classification Report:
-          person    precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
           11       1.00      1.00      1.00       111
           12       1.00      1.00      1.00       115
