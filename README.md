@@ -3,34 +3,31 @@ Project report for Understanding of Images
 
 ### Project Results and Overview
 Key Objectives
-This project aims to address the challenges of facial recognition under varying lighting conditions using Support Vector Machines (SVM). Lighting variations often degrade the performance of facial recognition systems by altering or obscuring key facial features. The objectives of this project are:
+Facial recognition systems are vital in modern applications, including security, surveillance, and biometric authentication. However, ensuring consistent performance under various environmental factors, especially lighting variations, is a persistent challenge. This project addresses this issue by employing Support Vector Machines (SVM) for robust facial recognition under varying lighting conditions.
 
-- To develop a robust SVM model capable of classifying facial images with high accuracy.
-- To demonstrate the effectiveness of SVM in handling variations caused by changes in lighting.
-- To evaluate the performance of the model on the Extended Yale B dataset, which is specifically designed for testing facial recognition under controlled lighting conditions.
-- Dimensions of Extended Yale Datset B: .......................(to be inserted)...................
-Results:
-- very high accuracy
--
--
-Zusatz: entferne Warning Meldung, damit der Code später beim Testen durch Prof besser durchläuft
+The main objectives of this project are:
 
+- Developing an SVM-based model capable of robust facial recognition
+- Mitigating lighting variability in facial recognition using SVM
+- Validating the model’s performance using the Extended Yale B dataset, specifically designed for controlled lighting variability
+- Analyzing the model's performance and providing insights into its strengths and limitations in handling lighting variations
+  
 ##### Accuracy
-The model achieved a test accuracy of 99,4% when trained and tested on distinct subsets of the dataset. This result highlights the capability of SVM to classify faces under diverse lighting conditions.
+The model achieved an exceptional test accuracy of 99.94%, highlighting the effectiveness of SVM in handling diverse lighting conditions.
+
 ##### Performance
-The SVM-based approach is computationally efficient and well-suited for small-to-medium-sized datasets, making it a viable solution for controlled environments.
-#### Insights
-Lighting variations significantly affect facial recognition performance, particularly under extreme lighting conditions.
-Preprocessing, such as resizing and grayscale conversion, played a critical role in improving the model's accuracy by standardizing input images.
-Misclassifications occurred in cases where shadows heavily distorted the facial features, indicating the need for additional preprocessing or data augmentation.
-Motivation and Significance
-Facial recognition is an integral technology in modern applications, from security and surveillance to biometric authentication. However, ensuring reliable performance in diverse real-world environments remains a challenge. This project addresses one of the most common environmental factors—lighting variability—by demonstrating how machine learning algorithms, specifically SVMs, can be utilized to improve recognition accuracy.
+The SVM-based approach demonstrated computational efficiency, making it suitable for small to medium-sized datasets.
+It is particularly effective in controlled environments, where preprocessing steps significantly enhance performance.
 
-By solving this problem, the project contributes to the development of more robust facial recognition systems, potentially enhancing their application in security systems, mobile devices, and other critical areas.
-
-
-
-
+##### Insights
+- Impact of Lighting Variations:
+Extreme lighting conditions can distort facial features, affecting recognition performance.
+- Role of Preprocessing:
+Steps like resizing and grayscale conversion significantly improved accuracy by standardizing input images.
+- Limitations:
+Misclassifications occurred in images with heavy shadows or extreme distortions, indicating a need for advanced preprocessing or data augmentation.
+- Motivation and Significance
+Facial recognition is central to security systems, biometric authentication, and mobile applications. However, real-world environments present challenges like lighting variability. This project demonstrates how machine learning algorithms, particularly SVM, can address these challenges, contributing to the development of more reliable systems.
 
 ### Source Code
 The used Source Code has been created in Google Colab and ist listed in this repsoitory in the file order "NAME TO BE INSERTED"
@@ -44,9 +41,17 @@ The code consists of the following:
 - Calculate and display performance metrics for multiclass classification
   - Accuracy  
   - Classification Report
--   Confusion Matrix
+  - Confusion Matrix
   - Cohen's Kappa
 - Example display of test images along with their predicted and actual labels
+
+##### Remarks: 
+- Google Account is required in order to use Colab
+- Listed source code is uploaded as .ipynd file
+- Dataset needs to be downloaded and uploaded to Google Drive to use given source code (ref. Installation and Usage)
+- Loading the dataset and training the SVM Model takes a lot of time (approx 10-20 minutes each)
+  
+
 
 ### Performance Metrices
 - Accuracy: 99.94%
@@ -147,6 +152,28 @@ weighted avg       1.00      1.00      1.00      3278
 - Cohen's Kappa: 1.00
 
 ### Installation and Usage
+This project has been implemented using Google Colab, with the Extended Yale B dataset.
+
+Steps:
+Download the dataset from Extended Yale B Dataset Link.
+Extract the contents and upload them to Google Drive.
+Mount Google Drive in Colab using the following code:
+python
+Code kopieren
+from google.colab import drive
+drive.mount('/content/drive')
+Specify the dataset path:
+python
+Code kopieren
+dataset_path = '/content/drive/My Drive/ExtendedYaleB'
+Run the provided script to:
+Preprocess images (resize and grayscale conversion).
+Train the SVM model.
+Evaluate performance with metrics and visualizations.
+
+
+
+--------------------------------------------------------
 This project has been implememnted with Google Colab.   (list was Colab benötigt -Google Konto)
 The choosen data set is the Extended Yale B dataset, which needs to be implemented into the environment. In this example the data has been downloaded from ...........(explain how to includde and implement the dataset (source verlinken)).
 
@@ -169,8 +196,11 @@ This path allows the script to access the dataset stored in Google Drive, prepro
 
 
 ### References and Documentation
-Support Vector Maschines:
+Support Vector Machines:
 Explanation 
+
+Dataset:
+jenfvuid
 
 
 [1] Athinodoros S. Georghiades, Peter N. Belhumeur, and David J. Kriegman.
