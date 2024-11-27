@@ -154,7 +154,7 @@ dataset_path = '/content/drive/My Drive/ExtendedYaleB'
 6) evaluate performance based on displayed metrics and visualizations
 -------------------------------------------------------
 ## 5 References and Documentation#
-##### References
+#### References
 
 1. **Georghiades, A. S., Belhumeur, P. N., & Kriegman, D. J. (2001).** "From Few to Many: Illumination Cone Models for Face Recognition under Variable Lighting and Pose." *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 23(6), 643–660.  
    [DOI: 10.1109/34.927464](https://doi.org/10.1109/34.927464)
@@ -171,7 +171,7 @@ dataset_path = '/content/drive/My Drive/ExtendedYaleB'
 5. **Zhang, L., et al. (2008).** "Face Recognition Using Scale Invariant Feature Transform and Support Vector Machine." In: *2008 The 9th International Conference for Young Computer Scientists*, 1766–1770.  
    [DOI: 10.1109/ICYCS.2008.481](https://doi.org/10.1109/ICYCS.2008.481)
 
-#### Explanation of Key Algorithm (Support Vector Machine SMV)
+#### Explanation of Key Algorithm (Support Vector Machine SVM)
 A Support Vector Machine (SVM) is a supervised machine learning algorithm used for classification tasks. It works by finding the optimal hyperplane that separates data into different classes, maximizing the margin between the hyperplane and the closest data points, known as support vectors. The SVM can handle both linear and non-linear classification problems. For non-linear data, SVM uses a kernel trick to map the data into a higher-dimensional space where a linear separation is possible. Common kernels include the Radial Basis Function (RBF) kernel, which allows for flexible decision boundaries.
 
 The key parameters in SVM are C and gamma. The parameter C controls the trade-off between maximizing the margin and minimizing classification errors, while gamma defines the influence of individual data points. SVM is effective in high-dimensional spaces and is known for its ability to generalize well, but it can be computationally expensive and requires careful tuning of parameters to achieve optimal performance.
