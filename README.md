@@ -2,23 +2,23 @@
 Project report for Understanding of Images
 
 ## 1 Project Results and Overview
-Key Objectives
+Key Objectives:
 Facial recognition systems are vital in modern applications, including security, surveillance, and biometric authentication. However, ensuring consistent performance under various environmental factors, especially lighting variations, is a persistent challenge. This project addresses this issue by employing Support Vector Machines (SVM) for robust facial recognition under varying lighting conditions.
 
-The main objectives of this project are:
+Core Porpose:
 - Developing an SVM-based model capable of robust facial recognition
 - Mitigating lighting variability in facial recognition using SVM
 - Validating the model’s performance using the Extended Yale B dataset, specifically designed for controlled lighting variability
 - Analyzing the model's performance and providing insights into its strengths and limitations in handling lighting variations
   
-##### Accuracy
+##### Accuracy:
 The model achieved a test accuracy of 99.94%, highlighting the effectiveness of SVM in handling diverse lighting conditions
 
-##### Performance
+##### Performance:
 The SVM-based approach demonstrated computational efficiency, making it suitable for small to medium-sized datasets
 It is particularly effective in controlled environments, where preprocessing steps significantly enhance performance
 
-##### Insights
+##### Insights:
 - Dataset:
 This project uses the Extended Yale Face Database B which contains 16128 images of 28 human subjects under 9 poses and 64 illumination conditions
 - Impact of Lighting Variations:
