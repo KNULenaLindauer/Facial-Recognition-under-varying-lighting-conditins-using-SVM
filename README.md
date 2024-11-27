@@ -54,7 +54,8 @@ The code consists of the following:
 ### Performance Metrices
 - Accuracy: 99.94%
 - Classification Report:
-              precision    recall  f1-score   support
+
+                  precision  recall  f1-score   support
 
           11       1.00      1.00      1.00       111
           12       1.00      1.00      1.00       115
@@ -84,10 +85,11 @@ The code consists of the following:
           37       1.00      0.99      1.00       123
           38       1.00      1.00      1.00       120
           39       1.00      1.00      1.00       115
+  
+      accuracy                        1.00      3278
+      macro avg    1.00      1.00     1.00      3278
+      weighted avg 1.00      1.00     1.00      3278
 
-    accuracy        -          -       1.00      3278
-   macro avg       1.00      1.00      1.00      3278
-weighted avg       1.00      1.00      1.00      3278
 
 - Confusion Matrix:
 [[111   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
