@@ -4,7 +4,7 @@
 #### Key Objectives  
 Facial recognition systems are vital in modern applications, including security, surveillance, and biometric authentication. However, ensuring consistent performance under various environmental factors, especially lighting variations, is a persistent challenge. This project addresses this issue by employing Support Vector Machines (SVM) for robust facial recognition under varying lighting conditions.
 
-#### Core Porpose  
+#### Core Purpose  
 - Developing a SVM-based model capable of robust facial recognition
 - Mitigating lighting variability in facial recognition using SVM
 - Validating the model’s performance using the Extended Yale B dataset, specifically designed for controlled lighting variability
