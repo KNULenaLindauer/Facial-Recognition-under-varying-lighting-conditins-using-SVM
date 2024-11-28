@@ -74,11 +74,31 @@ The code consists of the following:
 ## Anpassen +Auteilung in 2 Teilcodes
 The source file code contains the whole code that is required for running the project.
 ### FILE1 
-- contains the implementation of ....
+##### Purpose
+Implements facial recognition using an SVM classifier on the Extended Yale B dataset.
 
-- contents
-  - Library Import
-  - 
+##### Contents
+- Library Imports
+  - Includes necessary libraries for image processing, machine learning, performance evaluation, and visualization
+- Google Drive Mounting
+  - Provides an option to mount Google Drive to access the dataset
+- Dataset Path Setup
+  - Defines the directory path for the Extended Yale B dataset
+- Dataset Loading
+  - Processes images by converting to grayscale, resizing, and flattening into feature arrays
+  - Assigns labels based on folder names.
+- Progress Tracking
+  - Displays dataset loading progress as a percentage
+- Dataset Preparation
+  - Splits the data into training and testing sets
+- SVM Model Initialization
+  - Configures an SVM with an RBF kernel and specific hyperparameters
+- Memory Usage Function
+  - Tracks memory consumption during model training and prediction
+- Performance Evaluation
+  - Measures training and testing time, accuracy, and memory usage
+  - Generates a classification report and a confusion matrix
+  - Visualizes results with bar plots and heatmaps
 
 ### FILE2 
 - contains the extension to FILE1 and provides some further code to evaluate and asses the performance of the SVM Model. However the model can be used without this extension.
