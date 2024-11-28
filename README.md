@@ -5,7 +5,7 @@
 Facial recognition systems are vital in modern applications, including security, surveillance, and biometric authentication. However, ensuring consistent performance under various environmental factors, especially lighting variations, is a persistent challenge. This project addresses this issue by employing Support Vector Machines (SVM) for robust facial recognition under varying lighting conditions.
 
 #### Core Porpose  
-- Developing an SVM-based model capable of robust facial recognition
+- Developing a SVM-based model capable of robust facial recognition
 - Mitigating lighting variability in facial recognition using SVM
 - Validating the model’s performance using the Extended Yale B dataset, specifically designed for controlled lighting variability
 - Analyzing the model's performance and providing insights into its strengths and limitations in handling lighting variations
@@ -16,6 +16,7 @@ The model achieved a test accuracy of 99.94%, highlighting the effectiveness of 
 #### Performance  
 The SVM-based approach demonstrated computational efficiency, making it suitable for small to medium-sized datasets
 It is particularly effective in controlled environments, where preprocessing steps significantly enhance performance
+# Trainieren benötigt etwas Zeit, Assessments brauchen jedoch sehr lange, bis alle Metrices erstellt werden
 
 #### Insights
 - Dataset    
@@ -57,7 +58,7 @@ Facial_Recognition_under_varying_lighting_conditions_using_SVM/
 └── .gitignore               # Files to ignore in version control
 
 ```
-## Code 
+## Explanation of Code 
 ### FILE1 
 ##### Purpose
 Implements facial recognition using an SVM classifier on the Extended Yale B dataset.
@@ -93,7 +94,7 @@ Evaluates the performance of the SVM model with extended metrics and visualizati
 - Library Imports
   - Includes libraries for performance metrics, cross-validation, and visualization
 - Evaluation Function
-  - evaluate_extended_performance:
+  - evaluate_extended_performance
     - Calculates model predictions on the test set
     - Computes evaluation metrics
       - Accuracy: Overall correctness of predictions
@@ -119,6 +120,7 @@ Combines the functionalities of FILE1 and FILE2, enabling both model training an
 - Listed source code is uploaded as .ipynd file
 - Dataset needs to be downloaded and uploaded to Google Drive to use given source code (ref. Installation and Usage)
 - Loading the dataset and training the SVM Model takes a lot of time (approx 10-20 minutes each)
+- calculation of performance assessments takes a lot of time
 ---------------------------------------------------------------------------------------------------------------------
 
 ## 3 Performance Metrices
@@ -167,16 +169,20 @@ Combines the functionalities of FILE1 and FILE2, enabling both model training an
 - Cohen's Kappa: 1.00
 - Speed:
 - ![image](https://github.com/user-attachments/assets/a8596fb3-e039-4b77-bdf7-447c8095e99e)
--
+- fff:
 - ![image](https://github.com/user-attachments/assets/a2b44660-e71d-4742-b4b5-0d7c4439ff9f)
+- cross validation score:
+  IMAGE???ß????
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!
 !!
 --------------------------------------------------------------------------------
 ## 4 Installation and Usage
 This project has been implemented using Google Colab, with the Extended Yale B dataset.
+The size of the dataset is too large to upload and include it into this project, therefore instructions will be given on how download and use it will be provided in the following. The Extended Yale B dataset is distributed as a free resource for academic and research use and can therefore be downloaded from it's official website.
 
 Steps:
+# link problem
 1) Download the dataset from Extended Yale B Dataset Link: http://vision.ucsd.edu/extyaleb/CroppedYaleBZip/CroppedYaleB.zip
 2) Extract the contents and upload them to Google Drive.
 3) Mount Google Drive in Colab 
