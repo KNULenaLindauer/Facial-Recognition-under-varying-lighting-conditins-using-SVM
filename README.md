@@ -72,6 +72,20 @@ The code consists of the following:
 - Example display of test images along with their predicted and actual labels
 
 ## Anpassen +Auteilung in 2 Teilcodes
+The source file code contains the whole code that is required for running the project.
+### FILE1 
+- contains the implementation of ....
+
+- Inhalte von File1
+
+### FILE2 
+- contains the extension to FILE1 and provides some further code to evaluate and asses the performance of the SVM Model. However the model can be used without this extension.
+
+- Inhalte von File2
+
+
+### FILE3 
+- is the combination of FILE1 and FILE2 and can be used when both the model and its detailed assessment want to be performed. Note that the execution of this file takes a lot of time, because of the amount of data and the number of calculations that habe to be performed
 
 ##### Remarks: 
 - Google Account is required in order to use Colab
