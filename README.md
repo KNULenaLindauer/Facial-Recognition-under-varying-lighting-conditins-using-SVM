@@ -31,16 +31,8 @@ Facial recognition is central to security systems, biometric authentication, and
 
 -----------------------------------------------------------------------------------------------------
 ## 2 Source Code
-##### Structure
+### Structure of Project
 
-
-Für eine visuelle Darstellung der Projektstruktur, bei der die Ordner und Dateien korrekt hierarchisch angezeigt werden, kannst du die folgende Markdown-Syntax verwenden. Die Struktur wird mit Einrückungen und der richtigen Formatierung angezeigt, sodass du sie in deiner README.md Datei verwenden kannst.
-
-Hier ist die angepasste Syntax:
-
-markdown
-Code kopieren
-# Projektstruktur
 ```bash
 MyProject/ ├── Ordner1/ │ ├── datei1.py │ ├── datei2.py ├── Ordner2/ │ ├── datei1.py │ ├── datei2.py ├── datei_außen_1.py ├── datei_außen_2.py └── README.md
 
@@ -53,26 +45,7 @@ MyProject/ ├── Ordner1/ │ ├── datei1.py │ ├── datei2.py �
 - `Ordner1/` und `Ordner2/`: Enthalten jeweils zwei Python-Dateien.
 - `datei_außen_1.py` und `datei_außen_2.py`: Dateien, die sich außerhalb der Ordner befinden.
 - `README.md`: Diese Datei, die dein Projekt beschreibt.
-
-
-##### Code
-The used Source Code has been created in Google Colab and ist listed in this repsoitory in the file order "NAME TO BE INSERTED"
-The code consists of the following:
-- Import of required libraries
-- Mounting Drive for Datset and preparing Dataset
-- Loading Dataset
-- Splitting Dataset into training and testing sets
-- Training SVM model with RBF kernel
-- Test Set Predictions
-- Calculate and display performance metrics for multiclass classification
-  - Accuracy  
-  - Classification Report
-  - Confusion Matrix
-  - Cohen's Kappa
-- Example display of test images along with their predicted and actual labels
-
-## Anpassen +Auteilung in 2 Teilcodes
-The source file code contains the whole code that is required for running the project.
+## Code 
 ### FILE1 
 ##### Purpose
 Implements facial recognition using an SVM classifier on the Extended Yale B dataset.
@@ -127,9 +100,9 @@ Evaluates the performance of the SVM model with extended metrics and visualizati
   - Visualizes the computed metrics and performance measurements
 
 ### FILE3 
-- is the combination of FILE1 and FILE2 and can be used when both the model and its detailed assessment want to be performed. Note that the execution of this file takes a lot of time, because of the amount of data and the number of calculations that habe to be performed
+Combines the functionalities of FILE1 and FILE2, enabling both model training and detailed performance evaluation. Note that executing this file is time-intensive due to the dataset size and the extensive computations required for training and assessment.
 
-##### Remarks: 
+### Remarks: 
 - Google Account is required in order to use Colab
 - Listed source code is uploaded as .ipynd file
 - Dataset needs to be downloaded and uploaded to Google Drive to use given source code (ref. Installation and Usage)
