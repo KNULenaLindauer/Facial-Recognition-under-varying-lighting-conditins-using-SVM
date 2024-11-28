@@ -183,7 +183,7 @@ The size of the dataset is too large to upload and include it into this project,
 
 Steps:
 # link problem
-1) Download the dataset from Extended Yale B Dataset Link: http://vision.ucsd.edu/extyaleb/CroppedYaleBZip/CroppedYaleB.zip
+1) Download the dataset from Extended Yale B Dataset Link: https://academictorrents.com/details/06e479f338b56fa5948c40287b66f68236a14612 or use https://drive.google.com/drive/folders/1wqWJRha3enpuQk5uNM32fZ6BgM2kwvoa?usp=drive_link 
 2) Extract the contents and upload them to Google Drive.
 3) Mount Google Drive in Colab 
 ```python
