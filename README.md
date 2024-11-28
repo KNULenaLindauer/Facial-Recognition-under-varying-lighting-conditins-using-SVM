@@ -192,8 +192,7 @@ Combines the functionalities of SVM_model.ipynb and SVM_detailed_analysis.ipynb,
 This project has been implemented using Google Colab, with the Extended Yale B dataset.
 The size of the dataset is too large to upload and include it into this project, therefore instructions will be given on how download and use it will be provided in the following. The Extended Yale B dataset is distributed as a free resource for academic and research use and can therefore be downloaded from it's official website.
 
-Steps:
-# link problem
+#### Steps:
 1) Download the dataset from Extended Yale B Dataset Link: https://academictorrents.com/details/06e479f338b56fa5948c40287b66f68236a14612 or use https://drive.google.com/drive/folders/1wqWJRha3enpuQk5uNM32fZ6BgM2kwvoa?usp=drive_link 
 2) Extract the contents and upload them to Google Drive.
 3) Mount Google Drive in Colab 
@@ -206,8 +205,9 @@ drive.mount('/content/drive')
 dataset_path = '/content/drive/My Drive/ExtendedYaleB'
 ```
 5) Run the provided scripts
-   Script 1 ########################################################################
-   Script 2 #######################################################
+   - SVM_detailed_analysis.ipynb           
+   - SVM_model.ipynb                       
+   - SVM_model_AND_detailed_analysis.ipynb
 6) evaluate performance based on displayed metrics and visualizations
 -------------------------------------------------------
 ## 5 References and Documentation
