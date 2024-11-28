@@ -176,10 +176,13 @@ Combines the functionalities of SVM_model.ipynb and SVM_detailed_analysis.ipynb,
 
 
 - Confusion Matrix:
+  
 ![image](https://github.com/user-attachments/assets/5c01d69c-e15e-44ec-9784-3c4cb69a58c2)  
 - Speed:
+  
 ![image](https://github.com/user-attachments/assets/a8596fb3-e039-4b77-bdf7-447c8095e99e)  
 - Memory Usage:
+  
 ![image](https://github.com/user-attachments/assets/a2b44660-e71d-4742-b4b5-0d7c4439ff9f)  
 - Training vs Prediction:
 ![training_vs_prediction](https://github.com/user-attachments/assets/cb550ff8-4101-4448-a764-d64e11c50cea)  
