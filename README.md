@@ -15,7 +15,7 @@ The model achieved a test accuracy of 99.94%, highlighting the effectiveness of 
 
 #### Performance  
 
-The SVM-based approach demonstrated computational efficiency, making it suitable for small to medium-sized datasets, particularly in controlled environments where preprocessing steps significantly enhance performance (Rana et al., 2022; Georghiades et al., 2001). However, due to the extensive nature of the computations involved, particularly with larger datasets, the overall execution time for the model can be quite substantial. This issue is compounded when additional steps for a more detailed analysis are incorporated.
+The SVM-based approach demonstrated computational efficiency, making it suitable for small to medium-sized datasets, particularly in controlled environments where preprocessing steps significantly enhance performance. However, due to the extensive nature of the computations involved, particularly with larger datasets, the overall execution time for the model can be quite substantial. This issue is compounded when additional steps for a more detailed analysis are incorporated.
 
 To address this, the code has been divided into two main sections: the primary part handles the core functionality of the model, and a secondary, more detailed analysis section is included to evaluate the extended performance metrics. While the main component processes data efficiently, the additional analysis introduces further computational complexity, resulting in longer processing times. This structure allows for more manageable execution of the model while still providing the necessary in-depth insights into the algorithm’s performance, including accuracy, F1-score, precision, recall, and cross-validation results.
 
