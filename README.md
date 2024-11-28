@@ -76,7 +76,9 @@ The source file code contains the whole code that is required for running the pr
 ### FILE1 
 - contains the implementation of ....
 
-- Inhalte von File1
+- contents
+  - Library Import
+  - 
 
 ### FILE2 
 - contains the extension to FILE1 and provides some further code to evaluate and asses the performance of the SVM Model. However the model can be used without this extension.
