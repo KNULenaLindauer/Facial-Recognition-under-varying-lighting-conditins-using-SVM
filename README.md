@@ -5,7 +5,7 @@
 Facial recognition systems are vital in modern applications, including security, surveillance, and biometric authentication. However, ensuring consistent performance under various environmental factors, especially lighting variations, is a persistent challenge. This project addresses this issue by employing Support Vector Machines (SVM) for robust facial recognition under varying lighting conditions.
 
 #### Core Purpose  
-- Developing a SVM-based model capable of robust facial recognition
+- Developing an SVM-based model capable of robust facial recognition
 - Mitigating lighting variability in facial recognition using SVM
 - Validating the model’s performance using the Extended Yale B dataset, specifically designed for controlled lighting variability
 - Analyzing the model's performance and providing insights into its strengths and limitations in handling lighting variations
@@ -58,7 +58,7 @@ Facial_Recognition_under_varying_lighting_conditions_using_SVM/
 │
 ├── src/                                      # Source code for the project
 │   ├── required_libraries.txt                # list of used libraries
-│   ├── SVM_detailed_analysis.ipynb           # Extension for SVM Model that provides a detailed analysis and calculates all performance metrices
+│   ├── SVM_detailed_analysis.ipynb           # Extension for SVM Model that provides a detailed analysis and calculates all performance metrics
 │   ├── SVM_model.ipynb                       # SVM Model Implementation (Usage of Dataset, Training and Evaluation)
 │   └── SVM_model_AND_detailed_analysis.ipynb # Combination of previous .ipynb files 
 
@@ -122,7 +122,7 @@ Combines the functionalities of SVM_model.ipynb and SVM_detailed_analysis.ipynb,
 
 ### Remarks: 
 - Google Account is required in order to use Colab
-- Listed source code is uploaded as .ipynd file
+- Listed source code is uploaded as .ipynb file
 - Dataset needs to be downloaded and uploaded to Google Drive to use given source code (ref. Installation and Usage)
 - Loading the dataset and training the SVM Model takes a lot of time (approx 10-20 minutes each)
 - calculation of performance assessments takes a lot of time
@@ -190,7 +190,7 @@ Combines the functionalities of SVM_model.ipynb and SVM_detailed_analysis.ipynb,
 --------------------------------------------------------------------------------
 ## 4 Installation and Usage
 This project has been implemented using Google Colab, with the Extended Yale B dataset.
-The size of the dataset is too large to upload and include it into this project, therefore instructions will be given on how download and use it will be provided in the following. The Extended Yale B dataset is distributed as a free resource for academic and research use and can therefore be downloaded from it's official website.
+The size of the dataset is too large to upload and include it in this project, therefore instructions will be given on how to download and use it will be provided in the following. The Extended Yale B dataset is distributed as a free resource for academic and research use and can therefore be downloaded from its official website.
 
 #### Steps:
 1) Download the dataset from Extended Yale B Dataset Link: https://academictorrents.com/details/06e479f338b56fa5948c40287b66f68236a14612 or use https://drive.google.com/drive/folders/1wqWJRha3enpuQk5uNM32fZ6BgM2kwvoa?usp=drive_link 
