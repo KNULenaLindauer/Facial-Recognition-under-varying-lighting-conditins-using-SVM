@@ -117,7 +117,7 @@ Evaluates the performance of the SVM model with extended metrics and visualizati
   - Demonstrates the evaluation function to compute metrics for the SVM model
   - Visualizes the computed metrics and performance measurements
 
-####3)  SVM_model_AND_detailed_analysis.ipynb
+#### 3) SVM_model_AND_detailed_analysis.ipynb
 Combines the functionalities of SVM_model.ipynb and SVM_detailed_analysis.ipynb, enabling both model training and detailed performance evaluation. Note that executing this file is time-intensive due to the dataset size and the extensive computations required for training and assessment.
 
 ### Remarks: 
