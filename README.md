@@ -57,12 +57,6 @@ Facial_Recognition_under_varying_lighting_conditions_using_SVM/
 └── .gitignore               # Files to ignore in version control
 
 ```
-### Erklärung der Struktur:
-
-- `MyProject/`: Hauptverzeichnis deines Projekts.
-- `Ordner1/` und `Ordner2/`: Enthalten jeweils zwei Python-Dateien.
-- `datei_außen_1.py` und `datei_außen_2.py`: Dateien, die sich außerhalb der Ordner befinden.
-- `README.md`: Diese Datei, die dein Projekt beschreibt.
 ## Code 
 ### FILE1 
 ##### Purpose
@@ -175,9 +169,9 @@ Combines the functionalities of FILE1 and FILE2, enabling both model training an
 - ![image](https://github.com/user-attachments/assets/a8596fb3-e039-4b77-bdf7-447c8095e99e)
 -
 - ![image](https://github.com/user-attachments/assets/a2b44660-e71d-4742-b4b5-0d7c4439ff9f)
-
-
-  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!
+!!
 --------------------------------------------------------------------------------
 ## 4 Installation and Usage
 This project has been implemented using Google Colab, with the Extended Yale B dataset.
