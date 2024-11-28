@@ -208,7 +208,7 @@ dataset_path = '/content/drive/My Drive/ExtendedYaleB'
    - SVM_detailed_analysis.ipynb           
    - SVM_model.ipynb                       
    - SVM_model_AND_detailed_analysis.ipynb
-6) evaluate performance based on displayed metrics and visualizations
+6) Evaluate performance based on displayed metrics and visualizations
 -------------------------------------------------------
 ## 5 References and Documentation
 #### References
