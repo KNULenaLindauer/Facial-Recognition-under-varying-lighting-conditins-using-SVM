@@ -36,26 +36,27 @@ Facial recognition is central to security systems, biometric authentication, and
 ```
 Facial_Recognition_under_varying_lighting_conditions_using_SVM/
 │
-├── data/                    # Contains the dataset and related files
-│   ├── raw/                 # Original dataset (e.g., Extended Yale B)
-│   └── processed/           # Preprocessed data ready for training/testing
+├── data/                                     # Contains information and instructions related to the Extended Yale B Dataset
+│   ├── datastructure.txt/                    # Information about the strucure of dataset (content and file order)
+│   └── instructions.txt/                     # instructions on how to download the dataset
 │
-├── doku/               # Jupyter or Colab notebooks for experiments
-│   ├── data_preparation.ipynb  # Notebook for data loading and preprocessing
-│   ├── model_training.ipynb    # Notebook for training SVM and other models
-│   └── performance_analysis.ipynb  # Notebook for evaluating and visualizing results
+├── doku/                                     # submission report
+│   └── B202400524_Lena_Lindauer_FacialRecognitionunderVaryingLightingConditionsusingSVM.pdf  # report of project submission
 │
-├── results/                 # Store results such as plots, metrics, etc.
-│   ├── metrics/             # Accuracy, F1-score, confusion matrix, etc.
-│   └── plots/               # Confusion matrix heatmaps, bar charts, etc.
+├── results/                                  # store results such as plots, metrics, etc.
+│   ├── classification_report.txt             # Accuracy, Precision, Recall, F1-score , Support
+│   ├── confusion_matrix.png                  # Confusion Matrix
+│   ├── memory_usage.png                      # Memory Usage (Training vs Prediction)
+│   ├── performance_metrices.png              # Accuracy, F1-score, Precision, Recall, Cross-Validation-Accuracy
+│   ├── scores.txt                            # Exact values of Accuracy, F1-Score, Precision, Recall, Cross-Validation Accuracy
+│   ├── speed.png                             # Speed in Training vs Prediction
+│   └── training_vs_prediction.png            # Overview Training vs Prediction
 │
-├── src/                     # Source code for the project
-│   ├── preprocess.py        # Scripts for preprocessing data
-│   ├── model.py             # SVM model implementation
-│   ├── evaluation.py        # Evaluation metrics and visualization
-│   └── utils.py             # Utility functions (e.g., memory tracking)
-└── LICENSE                  # License for the project
-└── .gitignore               # Files to ignore in version control
+├── src/                                      # Source code for the project
+│   ├── required_libraries.txt                # list of used libraries
+│   ├── SVM_detailed_analysis.ipynb           # Extension for SVM Model that provides a detailed analysis and calculates all performance metrices
+│   ├── SVM_model.ipynb                       # SVM Model Implementation (Usage of Dataset, Training and Evaluation)
+│   └── SVM_model_AND_detailed_analysis.ipynb # Combination of previous .ipynb files 
 
 ```
 ## Explanation of Code 
