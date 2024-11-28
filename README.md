@@ -101,10 +101,30 @@ Implements facial recognition using an SVM classifier on the Extended Yale B dat
   - Visualizes results with bar plots and heatmaps
 
 ### FILE2 
-- contains the extension to FILE1 and provides some further code to evaluate and asses the performance of the SVM Model. However the model can be used without this extension.
+##### Purpose
+Evaluates the performance of the SVM model with extended metrics and visualizations.
 
-- Inhalte von File2
-
+##### Contents
+- Library Imports
+  - Includes libraries for performance metrics, cross-validation, and visualization
+- Evaluation Function
+  - evaluate_extended_performance:
+    - Calculates model predictions on the test set
+    - Computes evaluation metrics
+      - Accuracy: Overall correctness of predictions
+      - F1-Score: Harmonic mean of precision and recall (weighted)
+      - Precision: Percentage of correctly identified positives
+      - Recall: Percentage of true positives identified
+    - Performs cross-validation to estimate the model's robustness
+- Metric Visualization
+  - Creates a bar plot for metrics (accuracy, F1-score, precision, recall, and cross-validation accuracy)
+- Performance Visualization Function
+  - visualize_performance_metrics
+    - Visualizes training and prediction times with bar plots
+    - Illustrates memory usage during training and prediction
+- Usage
+  - Demonstrates the evaluation function to compute metrics for the SVM model
+  - Visualizes the computed metrics and performance measurements
 
 ### FILE3 
 - is the combination of FILE1 and FILE2 and can be used when both the model and its detailed assessment want to be performed. Note that the execution of this file takes a lot of time, because of the amount of data and the number of calculations that habe to be performed
