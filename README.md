@@ -32,51 +32,31 @@ Facial recognition is central to security systems, biometric authentication, and
 -----------------------------------------------------------------------------------------------------
 ## 2 Source Code
 ### Structure of Project
-
-facial_recognition_svm_project/
+```
+Facial_Recognition_under_varying_lighting_conditions_using_SVM/
 │
 ├── data/                    # Contains the dataset and related files
 │   ├── raw/                 # Original dataset (e.g., Extended Yale B)
 │   └── processed/           # Preprocessed data ready for training/testing
 │
-├── notebooks/               # Jupyter or Colab notebooks for experiments
+├── doku/               # Jupyter or Colab notebooks for experiments
 │   ├── data_preparation.ipynb  # Notebook for data loading and preprocessing
 │   ├── model_training.ipynb    # Notebook for training SVM and other models
 │   └── performance_analysis.ipynb  # Notebook for evaluating and visualizing results
+│
+├── results/                 # Store results such as plots, metrics, etc.
+│   ├── metrics/             # Accuracy, F1-score, confusion matrix, etc.
+│   └── plots/               # Confusion matrix heatmaps, bar charts, etc.
 │
 ├── src/                     # Source code for the project
 │   ├── preprocess.py        # Scripts for preprocessing data
 │   ├── model.py             # SVM model implementation
 │   ├── evaluation.py        # Evaluation metrics and visualization
 │   └── utils.py             # Utility functions (e.g., memory tracking)
-│
-├── results/                 # Store results such as plots, metrics, etc.
-│   ├── metrics/             # Accuracy, F1-score, confusion matrix, etc.
-│   └── plots/               # Confusion matrix heatmaps, bar charts, etc.
-│
-├── tests/                   # Test cases to validate code functionality
-│   ├── test_preprocess.py   # Unit tests for preprocessing
-│   └── test_model.py        # Unit tests for model training and prediction
-│
-├── docs/                    # Documentation files
-│   ├── README.md            # Project overview and instructions
-│   └── dataset_guide.md     # Guide to downloading and using the dataset
-│
-├── scripts/                 # Standalone scripts for quick execution
-│   ├── train_model.py       # Script to train the SVM model
-│   └── evaluate_model.py    # Script to evaluate the model performance
-│
-├── configs/                 # Configuration files for parameters
-│   └── svm_config.yaml      # Configuration for SVM parameters (e.g., kernel, C)
-│
-├── environment/             # Environment and dependency management
-│   ├── requirements.txt     # Python dependencies
-│   └── environment.yml      # Conda environment configuration (optional)
-│
 └── LICENSE                  # License for the project
 └── .gitignore               # Files to ignore in version control
 
-
+```
 ### Erklärung der Struktur:
 
 - `MyProject/`: Hauptverzeichnis deines Projekts.
