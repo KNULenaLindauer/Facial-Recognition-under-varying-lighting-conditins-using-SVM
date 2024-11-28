@@ -14,9 +14,13 @@ Facial recognition systems are vital in modern applications, including security,
 The model achieved a test accuracy of 99.94%, highlighting the effectiveness of SVM in handling diverse lighting conditions
 
 #### Performance  
-The SVM-based approach demonstrated computational efficiency, making it suitable for small to medium-sized datasets
-It is particularly effective in controlled environments, where preprocessing steps significantly enhance performance
-# Trainieren benötigt etwas Zeit, Assessments brauchen jedoch sehr lange, bis alle Metrices erstellt werden
+
+The SVM-based approach demonstrated computational efficiency, making it suitable for small to medium-sized datasets, particularly in controlled environments where preprocessing steps significantly enhance performance (Rana et al., 2022; Georghiades et al., 2001). However, due to the extensive nature of the computations involved, particularly with larger datasets, the overall execution time for the model can be quite substantial. This issue is compounded when additional steps for a more detailed analysis are incorporated.
+
+To address this, the code has been divided into two main sections: the primary part handles the core functionality of the model, and a secondary, more detailed analysis section is included to evaluate the extended performance metrics. While the main component processes data efficiently, the additional analysis introduces further computational complexity, resulting in longer processing times. This structure allows for more manageable execution of the model while still providing the necessary in-depth insights into the algorithm’s performance, including accuracy, F1-score, precision, recall, and cross-validation results.
+
+This approach enables a more modular exploration of the results, with the detailed analysis section being run separately when in-depth evaluations are needed, balancing the need for computational efficiency and comprehensive model assessment.
+
 
 #### Insights
 - Dataset    
@@ -59,8 +63,8 @@ Facial_Recognition_under_varying_lighting_conditions_using_SVM/
 │   └── SVM_model_AND_detailed_analysis.ipynb # Combination of previous .ipynb files 
 
 ```
-## Explanation of Code 
-### SVM_model.ipynb 
+### Explanation of Code 
+#### SVM_model.ipynb 
 ##### Purpose
 Implements facial recognition using an SVM classifier on the Extended Yale B dataset.
 
@@ -87,7 +91,7 @@ Implements facial recognition using an SVM classifier on the Extended Yale B dat
   - Generates a classification report and a confusion matrix
   - Visualizes results with bar plots and heatmaps
 
-### SVM_detailed_analysis.ipynb  
+#### SVM_detailed_analysis.ipynb  
 ##### Purpose
 Evaluates the performance of the SVM model with extended metrics and visualizations.
 
@@ -113,7 +117,7 @@ Evaluates the performance of the SVM model with extended metrics and visualizati
   - Demonstrates the evaluation function to compute metrics for the SVM model
   - Visualizes the computed metrics and performance measurements
 
-### SVM_model_AND_detailed_analysis.ipynb
+#### SVM_model_AND_detailed_analysis.ipynb
 Combines the functionalities of SVM_model.ipynb and SVM_detailed_analysis.ipynb, enabling both model training and detailed performance evaluation. Note that executing this file is time-intensive due to the dataset size and the extensive computations required for training and assessment.
 
 ### Remarks: 
