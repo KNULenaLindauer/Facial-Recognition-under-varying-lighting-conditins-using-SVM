@@ -64,7 +64,7 @@ Facial_Recognition_under_varying_lighting_conditions_using_SVM/
 
 ```
 ### Explanation of Code 
-#### SVM_model.ipynb 
+#### 1) SVM_model.ipynb 
 ##### Purpose
 Implements facial recognition using an SVM classifier on the Extended Yale B dataset.
 
@@ -91,7 +91,7 @@ Implements facial recognition using an SVM classifier on the Extended Yale B dat
   - Generates a classification report and a confusion matrix
   - Visualizes results with bar plots and heatmaps
 
-#### SVM_detailed_analysis.ipynb  
+#### 2) SVM_detailed_analysis.ipynb  
 ##### Purpose
 Evaluates the performance of the SVM model with extended metrics and visualizations.
 
@@ -117,7 +117,7 @@ Evaluates the performance of the SVM model with extended metrics and visualizati
   - Demonstrates the evaluation function to compute metrics for the SVM model
   - Visualizes the computed metrics and performance measurements
 
-#### SVM_model_AND_detailed_analysis.ipynb
+####3)  SVM_model_AND_detailed_analysis.ipynb
 Combines the functionalities of SVM_model.ipynb and SVM_detailed_analysis.ipynb, enabling both model training and detailed performance evaluation. Note that executing this file is time-intensive due to the dataset size and the extensive computations required for training and assessment.
 
 ### Remarks: 
