@@ -1,0 +1,16 @@
+The Extended Yale B dataset is structured to facilitate the evaluation of facial recognition algorithms under varying lighting conditions. The dataset consists of 38 subjects, with each subject having a set of facial images captured under different lighting and angles. Each subject is identified by unique labels such as "yaleB11," "yaleB12," making it easier to reference specific subjects.
+
+For each individual, there are 64 images, which include:
+
+Ambient light images (captured with no additional lighting),
+Images captured under 9 different lighting conditions that simulate various illumination scenarios,
+Images taken from different viewing angles, simulating real-world variations in head pose.
+The images are stored in PGM (Portable Gray Map) format, a common format for grayscale images. The filenames typically follow a pattern that includes the subject identifier, lighting condition, and viewing angle (e.g., "yaleB11_P00+000E+00.pgm"), making it possible to easily identify each image.
+
+The filename convention provides detailed information for each image:
+
+yaleB11_P00.info: This file contains metadata, such as lighting parameters and subject properties.
+yaleB11_P00+000E+00.pgm: This is an image of subject 11, taken under the +000E+00 lighting condition (neutral), with a specific angle.
+The dataset is organized into subfolders, each corresponding to one subject. Inside these subfolders are the .pgm images and the associated .info file, which facilitates easy linking of images and metadata to specific subjects. This structure allows for efficient data access and supports the testing of facial recognition algorithms under different conditions.
+
+In total, the dataset includes more than 16000 images, which are distributed across multiple directories, each containing the data for a specific subject, including various lighting and angle conditions. This organization simplifies the use of the dataset for algorithm development and validation, particularly for testing facial recognition under varying lighting and pose conditions.
