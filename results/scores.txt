@@ -1,0 +1,5 @@
+Accuracy: 99.94%
+F1-Score: 1.00
+Precision: 1.00
+Recall: 1.00
+Cross-Validation Accuracy: 99.83%
