@@ -44,7 +44,7 @@ Facial_Recognition_under_varying_lighting_conditions_using_SVM/
 │   ├── datastructure.txt/                    # Information about the strucure of dataset (content and file order)
 │   └── instructions.txt/                     # instructions on how to download the dataset
 │
-├── doku/                                     # submission report
+├── doku/                                     # report
 │   └── B202400524_Lena_Lindauer_FacialRecognitionunderVaryingLightingConditionsusingSVM.pdf  # report of project submission
 │
 ├── results/                                  # store results such as plots, metrics, etc.
