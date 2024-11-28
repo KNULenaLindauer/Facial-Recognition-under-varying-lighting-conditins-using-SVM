@@ -60,7 +60,7 @@ Facial_Recognition_under_varying_lighting_conditions_using_SVM/
 
 ```
 ## Explanation of Code 
-### FILE1 
+### SVM_model.ipynb 
 ##### Purpose
 Implements facial recognition using an SVM classifier on the Extended Yale B dataset.
 
@@ -87,7 +87,7 @@ Implements facial recognition using an SVM classifier on the Extended Yale B dat
   - Generates a classification report and a confusion matrix
   - Visualizes results with bar plots and heatmaps
 
-### FILE2 
+### SVM_detailed_analysis.ipynb  
 ##### Purpose
 Evaluates the performance of the SVM model with extended metrics and visualizations.
 
@@ -113,8 +113,8 @@ Evaluates the performance of the SVM model with extended metrics and visualizati
   - Demonstrates the evaluation function to compute metrics for the SVM model
   - Visualizes the computed metrics and performance measurements
 
-### FILE3 
-Combines the functionalities of FILE1 and FILE2, enabling both model training and detailed performance evaluation. Note that executing this file is time-intensive due to the dataset size and the extensive computations required for training and assessment.
+### SVM_model_AND_detailed_analysis.ipynb
+Combines the functionalities of SVM_model.ipynb and SVM_detailed_analysis.ipynb, enabling both model training and detailed performance evaluation. Note that executing this file is time-intensive due to the dataset size and the extensive computations required for training and assessment.
 
 ### Remarks: 
 - Google Account is required in order to use Colab
@@ -126,6 +126,12 @@ Combines the functionalities of FILE1 and FILE2, enabling both model training an
 
 ## 3 Performance Metrices
 - Accuracy: 99.94%
+- F1-Score: 1.00
+- Precision: 1.00
+- Recall: 1.00
+- Cross-Validation Accuracy: 99.83%
+  ![performance_metrices](https://github.com/user-attachments/assets/9a4e76df-e2a2-44a3-8c99-859972944e6f)
+- Cohen's Kappa: 1.00
 - Classification Report:
 
                   precision  recall  f1-score   support
@@ -166,17 +172,13 @@ Combines the functionalities of FILE1 and FILE2, enabling both model training an
 
 - Confusion Matrix:
 ![image](https://github.com/user-attachments/assets/5c01d69c-e15e-44ec-9784-3c4cb69a58c2)
-
-- Cohen's Kappa: 1.00
 - Speed:
-- ![image](https://github.com/user-attachments/assets/a8596fb3-e039-4b77-bdf7-447c8095e99e)
-- fff:
-- ![image](https://github.com/user-attachments/assets/a2b44660-e71d-4742-b4b5-0d7c4439ff9f)
-- cross validation score:
-  IMAGE???ß????
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!
-!!
+![image](https://github.com/user-attachments/assets/a8596fb3-e039-4b77-bdf7-447c8095e99e)
+- Memory Usage:
+![image](https://github.com/user-attachments/assets/a2b44660-e71d-4742-b4b5-0d7c4439ff9f)
+- Training vs Prediction:
+![training_vs_prediction](https://github.com/user-attachments/assets/cb550ff8-4101-4448-a764-d64e11c50cea)
+
 --------------------------------------------------------------------------------
 ## 4 Installation and Usage
 This project has been implemented using Google Colab, with the Extended Yale B dataset.
